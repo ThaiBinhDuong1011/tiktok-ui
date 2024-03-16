@@ -29,9 +29,11 @@
 }
 
 .icon {
-  display: inline-block;
+  display: inline-flex;
   width: 24px;
-  text-align: center;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
 }
 
 // Button styles
