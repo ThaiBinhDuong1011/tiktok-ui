@@ -19,7 +19,7 @@
     margin-bottom: 8px;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #161823bf;
+    color: var(--text-opacity-color);
 }
 
 .account-item {
@@ -48,19 +48,19 @@
 .nickname {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #161823;
+    color: var(--text-color);
 }
 
 .check {
     font-size: 1.4rem;
     margin-left: 4px;
-    color: #20d5ec;
+    color: var(--check-color);
 }
 
 .name {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #161823bf;
+    color: var(--text-opacity-color);
 }
 
 .more-btn {
