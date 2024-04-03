@@ -8,11 +8,11 @@ import AccountPreview from './AccountPreview';
 
 const cx = classNames.bind(styles);
 
-function AccountItem() {
+function AccountItem({ data }) {
     const renderPreview = (props) => (
         <div tabIndex="-1" {...props}>
             <PopperWrapper>
-                <AccountPreview />
+                <AccountPreview data={data} />
             </PopperWrapper>
         </div>
     );
@@ -21,17 +21,13 @@ function AccountItem() {
         <div>
             <Tippy interactive delay={[800, 0]} offset={[-20, 0]} placement="bottom" render={renderPreview}>
                 <div className={cx('account-item')}>
-                    <img
-                        className={cx('avatar')}
-                        src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/7332113831956578325.jpeg?lk3s=a5d48078&x-expires=1712149200&x-signature=sN1lYGgqu3EWctPjFirHjMwCbpI%3D"
-                        alt=""
-                    />
+                    <img className={cx('avatar')} src={data.avatar} alt={data.nickname} />
                     <div className={cx('item-info')}>
                         <p className={cx('nickname')}>
-                            <strong>shai96q222a4</strong>
-                            <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />
+                            <strong>{data.nickname}</strong>
+                            {data.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />}
                         </p>
-                        <p className={cx('name')}>බෙබා මීම්ස්</p>
+                        <p className={cx('name')}>{`${data.first_name} ${data.last_name}`}</p>
                     </div>
                 </div>
             </Tippy>

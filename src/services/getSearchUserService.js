@@ -1,6 +1,6 @@
 import * as httpRequest from '~/utils/httpRequest';
 
-export const search = async (q, type = 'less') => {
+export const getSearchUser = async (q, type = 'less') => {
     try {
         const res = await httpRequest.get(`users/search`, {
             params: {
@@ -10,6 +10,6 @@ export const search = async (q, type = 'less') => {
         });
         return res.data;
     } catch (error) {
-        console.log(error);
+        console.log('errorSearch: ', error);
     }
 };
