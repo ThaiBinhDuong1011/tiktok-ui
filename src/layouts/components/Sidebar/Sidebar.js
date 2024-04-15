@@ -17,7 +17,7 @@ const cx = classNames.bind(styles);
 function Sidebar() {
     return (
         <aside className={cx('warpper')}>
-            <Menu>
+            <Menu className={cx('menu')}>
                 <MenuItem
                     title={'For You'}
                     icon={<HomeIcon />}

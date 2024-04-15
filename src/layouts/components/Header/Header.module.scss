@@ -55,8 +55,8 @@
     cursor: pointer;
 
     &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-        border-color: rgba(22, 24, 35, 0.12);
+        background-color: var(--white);
+        border-color: var(--border-hover-color);
     }
 }
 

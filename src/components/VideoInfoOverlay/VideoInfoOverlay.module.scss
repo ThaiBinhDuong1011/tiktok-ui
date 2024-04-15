@@ -1,0 +1,76 @@
+.warpper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 692px;
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.menu-popper {
+    margin-top: 8px;
+}
+
+.info {
+    margin-left: 12px;
+    color: var(--text-color);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+
+    &:hover .nickname {
+        text-decoration: underline;
+    }
+}
+
+.nickname {
+    margin-right: 4px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.fullname {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.music-name {
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.btn-following {
+    color: var(--text-color);
+    background-color: var(--white);
+    border-color: #1618231f;
+
+    &:hover {
+        background-color: var(--white);
+        border-color: var(--border-hover-color);
+    }
+}

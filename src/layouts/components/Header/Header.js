@@ -10,7 +10,7 @@ import Button from '~/components/Button';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Menu from '~/components/Popper/Menu';
-import Image from '~/components/Image';
+import Image from '~/components/Images';
 import {
     EnglishIcon,
     FeedbackAndHelpIcon,
@@ -108,7 +108,12 @@ function Header() {
                 <div className={cx('action')}>
                     {currentUser ? (
                         <>
-                            <Button outline leftIcon={<UploadIcon />} className={cx('upload-btn')}>
+                            <Button
+                                outline
+                                leftIcon={<UploadIcon />}
+                                className={cx('upload-btn')}
+                                to={config.routes.upload}
+                            >
                                 Update
                             </Button>
                             <Tippy delay={[0, 100]} content="Messages" placement="bottom">

@@ -1,5 +1,21 @@
 .warpper {
-    width: 356px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 240px;
     padding: 20px 0 26px 8px;
     margin-left: -18px;
+    overflow-y: scroll;
+
+    &:hover {
+        transition: opacity 2s ease;
+    }
+
+    &:not(:hover)::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+}
+
+.menu {
+    margin-top: 60px;
 }
